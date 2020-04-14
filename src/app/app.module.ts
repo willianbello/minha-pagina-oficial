@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {SharedModule} from './shared/shared.module';
 import {HomeModule} from './components/home/home.module';
+import { TesteComponent } from './components/teste/teste.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    TesteComponent,
   ],
   imports: [
     BrowserModule,
@@ -18,7 +20,7 @@ import {HomeModule} from './components/home/home.module';
     HomeModule
   ],
   providers: [
-    { provide: LOCALE_ID, useValue: 'pt' }
+    { provide: LOCALE_ID, useValue: 'pt' },
   ],
   bootstrap: [AppComponent],
 })

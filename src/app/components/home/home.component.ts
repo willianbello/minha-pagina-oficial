@@ -14,12 +14,12 @@ export class HomeComponent implements OnInit {
     {
       title: 'Inicio',
       icon: 'home',
-      url: '/home'
+      url: ''
     },
     {
-      title: 'Github',
+      title: 'Teste',
       icon: 'schedule',
-      url: '/schedule'
+      url: 'teste'
     }
   ];
 

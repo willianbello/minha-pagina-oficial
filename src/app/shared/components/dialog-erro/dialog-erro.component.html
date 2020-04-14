@@ -1,0 +1,9 @@
+<div class="error-box-container">
+  <h1 mat-dialog-title>{{data.retornoErro.error }}</h1>
+  <mat-dialog-content class="content-container" [innerHTML]="data.retornoErro.message">
+  </mat-dialog-content>
+  <mat-dialog-actions class="botao-fechar">
+    <button mat-button *ngIf="data.retornoErro.flagExibeComponenteAuxiliar" [mat-dialog-close]="true" cdkFocusInitial>Tentar novamente</button>
+    <button mat-button [mat-dialog-close]="false" >Fechar</button>
+  </mat-dialog-actions>
+</div>
