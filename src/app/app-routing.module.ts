@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {ModuleWithProviders} from '@angular/core';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', loadChildren: './components/home/home.module#HomeModule' },
+  { path: 'home', loadChildren: './components/home/home.module#HomeModule' },
+];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }
+export const AppRoutingModule: ModuleWithProviders = RouterModule.forRoot(routes, {useHash: true});
+

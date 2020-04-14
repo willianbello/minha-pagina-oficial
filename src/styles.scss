@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.curso-pointer {
+  cursor: pointer;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.pt-50 {
+  padding-top: 50px;
+}
+
+.menu {
+  .item {
+    width: 100%;
+    cursor: pointer;
+    outline: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    .item-body {
+      padding: 5px 20px;
+      box-sizing: border-box;
+      display: -webkit-box;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      flex-direction: row;
+      -webkit-box-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      align-items: center;
+      align-content: center;
+      color: white;
+      .icon {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+::ng-deep ng-sidenav {
+  top: 62px !important;
+  position: relative;
+}

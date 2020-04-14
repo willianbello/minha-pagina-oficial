@@ -1,0 +1,23 @@
+<app-header (sidenavToggled)='toggleSidenavCollapsed()'></app-header>
+<ng-sidenav-container>
+  <ng-sidenav
+    [expanded]="isExpanded"
+    [drawerState]="state"
+    [drawerWidth]="'250px'"
+    [drawerWidthCollapsed]="'80px'"
+    [color]="'#3D78CC'">
+    <div class="menu">
+      <div class="item" *ngFor="let item of menuItems" routerLink="{{item.url}}">
+        <div class="item-body">
+          <div class="icon">
+            <i class="material-icons">{{item.icon}}</i>
+          </div>
+          <div class="text" *hiddenOnCollapsed="isExpanded">{{item.title}}</div>
+        </div>
+      </div>
+    </div>
+  </ng-sidenav>
+  <ng-sidenav-content>
+    <router-outlet></router-outlet>
+  </ng-sidenav-content>
+</ng-sidenav-container>
