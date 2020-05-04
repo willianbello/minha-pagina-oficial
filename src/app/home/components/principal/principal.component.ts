@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {Usuario} from '../../shared/models/usuario/usuario';
-import {GithubService} from '../../shared/services/github/github.service';
+import {Usuario} from '../../../shared/models/usuario/usuario';
+import {GithubService} from '../../../shared/services/github/github.service';
 import {HttpClient} from '@angular/common/http';
-import {DialogService} from '../../shared/services/dialog/dialog.service';
+import {DialogService} from '../../../shared/services/dialog/dialog.service';
 
 @Component({
   selector: 'app-principal',

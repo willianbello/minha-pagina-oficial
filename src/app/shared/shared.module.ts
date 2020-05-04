@@ -6,20 +6,25 @@ import { HeaderComponent } from './components/header/header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MAT_DIALOG_DATA, MatDialogModule, MatDialogRef} from '@angular/material/dialog';
 import { DialogErroComponent } from './components/dialog-erro/dialog-erro.component';
-import {MatIconRegistry} from '@angular/material/icon';
 import {GithubService} from './services/github/github.service';
 import {HttpClientModule} from '@angular/common/http';
 import {DialogService} from './services/dialog/dialog.service';
+import {MatListModule} from '@angular/material/list';
+import {NotFoundComponent} from './components/not-found/not-found.component';
 
 @NgModule({
-  declarations: [HeaderComponent, DialogErroComponent],
+  declarations: [
+    HeaderComponent,
+    DialogErroComponent,
+    NotFoundComponent],
   imports: [
     CommonModule,
     MaterialModule,
     SidenavModule,
     FlexLayoutModule,
     MatDialogModule,
-    HttpClientModule
+    HttpClientModule,
+    MatListModule,
   ],
   exports: [
     MaterialModule,
@@ -27,6 +32,8 @@ import {DialogService} from './services/dialog/dialog.service';
     HeaderComponent,
     FlexLayoutModule,
     HttpClientModule,
+    MatListModule,
+    NotFoundComponent
   ],
   providers: [
     GithubService,

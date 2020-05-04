@@ -1,0 +1,16 @@
+<div class="view">
+  <div fxLayout="row">
+    <div fxFlex="18%">
+      <img [src]="usuario.avatar_url">
+    </div>
+    <div fxFlex="80%">
+      <mat-list>
+        <div mat-subheader>Willian Bello Desenvolvedor Web Frontend</div>
+        <mat-divider></mat-divider>
+        <mat-list-item>
+          <div mat-line>{{ usuario.bio }}</div>
+        </mat-list-item>
+      </mat-list>
+    </div>
+  </div>
+</div>

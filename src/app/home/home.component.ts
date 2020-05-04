@@ -17,9 +17,9 @@ export class HomeComponent implements OnInit {
       url: ''
     },
     {
-      title: 'Teste',
+      title: 'WGPark 2.0',
       icon: 'schedule',
-      url: 'teste'
+      url: 'wgpark'
     }
   ];
 
@@ -27,14 +27,5 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-  }
-
-  toggleSidenavCollapsed() {
-    this.isExpanded = !this.isExpanded;
-    this.state = 'collapsed';
-  }
-
-  toggleSidenav(isExpanded) {
-    this.isExpanded = isExpanded;
   }
 }

@@ -12,14 +12,19 @@ export class AppComponent {
 
   menuItems = [
     {
-      title: 'Home',
+      title: 'Inicio',
       icon: 'home',
-      url: '/home'
+      url: 'home'
     },
     {
-      title: 'Schedule',
+      title: 'WGPark 2.0',
       icon: 'schedule',
-      url: '/schedule'
+      url: 'wgpark'
+    },
+    {
+      title: 'Link Qualquer',
+      icon: 'menu',
+      url: 'not-found'
     }
   ];
 
@@ -28,13 +33,13 @@ export class AppComponent {
     this.state = 'collapsed';
   }
 
+  toggleSidenav(isExpanded) {
+    this.isExpanded = isExpanded;
+  }
+
   toggleSidenavHidden() {
     this.isExpanded = !this.isExpanded;
     this.state = 'hidden';
-  }
-
-  toggleSidenav(isExpanded) {
-    this.isExpanded = isExpanded;
   }
 
   open() {
