@@ -11,6 +11,9 @@ import {HttpClientModule} from '@angular/common/http';
 import {DialogService} from './services/dialog/dialog.service';
 import {MatListModule} from '@angular/material/list';
 import {NotFoundComponent} from './components/not-found/not-found.component';
+import {MdcButtonModule, MdcChipsModule} from '@angular-mdc/web';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatButton, MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,9 @@ import {NotFoundComponent} from './components/not-found/not-found.component';
     MatDialogModule,
     HttpClientModule,
     MatListModule,
+    MatChipsModule,
+    MatButtonModule,
+    MdcButtonModule,
   ],
   exports: [
     MaterialModule,
@@ -33,7 +39,10 @@ import {NotFoundComponent} from './components/not-found/not-found.component';
     FlexLayoutModule,
     HttpClientModule,
     MatListModule,
-    NotFoundComponent
+    NotFoundComponent,
+    MatChipsModule,
+    MatButtonModule,
+    MdcButtonModule
   ],
   providers: [
     GithubService,

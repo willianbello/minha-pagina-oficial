@@ -1,0 +1,29 @@
+<mat-toolbar color="accent">WGPark 2.0</mat-toolbar>
+<div class="mt-25">
+  <span>Última atualização: </span>
+</div>
+<div>
+  <h2>Carros</h2>
+</div>
+<div>
+  <div><span>Filtros</span></div>
+  <div fxLayout="row">
+    <div fxFlex="50%">
+      <mat-chip-list>
+        <mat-chip [removable]="true">Placa<mat-icon>cancel</mat-icon></mat-chip>
+        <mat-chip [removable]="true">Status<mat-icon>cancel</mat-icon></mat-chip>
+        <mat-chip [removable]="true">Modelo<mat-icon>cancel</mat-icon></mat-chip>
+        <mat-chip [removable]="true">Ver Todos<mat-icon>keyboard_arrow_down</mat-icon></mat-chip>
+      </mat-chip-list>
+    </div>
+    <div fxFlex="50%" class="text-right">
+      <mat-icon class="mr-10 curso-pointer" matTooltip="Imprima os carros da lista">print</mat-icon>
+      <mat-icon class="mr-10 curso-pointer" matTooltip="Atualize a lista de carros">refresh</mat-icon>
+      <mat-icon class="mr-10 curso-pointer" matTooltip="Ajuste as colunas que serão exibidas">view_column</mat-icon>
+      <button mat-button color="primary" class="btn-small" mat-raised-button matTooltip="Adicione um novo veículo">
+        <mat-icon>add</mat-icon>
+        <span>Novo</span>
+      </button>
+    </div>
+  </div>
+</div>

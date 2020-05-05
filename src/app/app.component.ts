@@ -20,11 +20,6 @@ export class AppComponent {
       title: 'WGPark 2.0',
       icon: 'schedule',
       url: 'wgpark'
-    },
-    {
-      title: 'Link Qualquer',
-      icon: 'menu',
-      url: 'not-found'
     }
   ];
 
